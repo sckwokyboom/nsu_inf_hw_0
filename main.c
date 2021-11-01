@@ -2,7 +2,7 @@
 #include <mm_malloc.h>
 #include <stdlib.h>
 
-
+//fuck
 struct doubleList {
     int key;
     double value;
