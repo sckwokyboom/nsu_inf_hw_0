@@ -27,14 +27,14 @@ int isEmpty(struct doubleList* list) {
 }
 
 struct doubleList* createElement(double newValue, int newKey) {
-    struct doubleList* newElement;
-    newElement = (struct doubleList*) malloc(sizeof(struct doubleList));
-    newElement -> key = newKey;
-    newElement -> value = newValue;
-    newElement -> next = NULL;
-    newElement -> previous = NULL;
+    struct doubleList *newElement;
+    newElement = (struct doubleList *) malloc(sizeof(struct doubleList));
+    newElement->key = newKey;
+    newElement->value = newValue;
+    newElement->next = NULL;
+    newElement->previous = NULL;
     return newElement;
-
+}
 
 void push(struct doubleList* L, struct doubleList* elem) {
     if (isEmpty(L) != 0) {
